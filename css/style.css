@@ -1,0 +1,1163 @@
+/**************************************/
+/************ General CSS *************/
+/**************************************/
+body {
+    color: #757575;
+    font-family: 'Raleway', sans-serif;
+    background: #ffffff;
+}
+
+a {
+    color: #4F84C4;
+    transition: 0.3s;
+}
+
+a:hover,
+a:active,
+a:focus {
+    color: #666666;
+    outline: none;
+    text-decoration: none;
+}
+
+p {
+    color: #757575;
+    padding: 0;
+    margin: 0 0 15px 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 700;
+    color: #888888;
+    margin: 0 0 15px 0;
+    padding: 0;
+}
+
+h4,
+h5,
+h6 {
+    font-weight: 400;
+}
+
+.mt-100 {
+    margin-top: 100px;
+}
+
+
+
+/**************************************/
+/********** Back to Top CSS ***********/
+/**************************************/
+.back-to-top {
+    position: fixed;
+    display: none;
+    background: #4F84C4;
+    color: #ffffff;
+    width: 45px;
+    height: 45px;
+    text-align: center;
+    line-height: 1;
+    font-size: 44px;
+    right: 15px;
+    bottom: 15px;
+    transition: background 0.3s;
+    z-index: 9;
+}
+
+.back-to-top i {
+    color: #ffffff;
+}
+
+
+
+/**************************************/
+/************** Nav CSS ***************/
+/**************************************/
+#nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100px;
+    padding: 20px 0;
+    z-index: 999;
+}
+
+#nav.nav-sticky {
+    height: 70px;
+    padding: 8px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .3);
+    transition: all 0.3s;
+}
+
+#nav .navbar {
+    height: 100%;
+    background: transparent !important;
+}
+
+#nav .navbar-brand {
+    padding: 0;
+}
+
+#nav .navbar-brand img {
+    position: absolute;
+    max-height: 60px;
+    margin-top: -27px;
+    transition: all .5s;
+}
+
+#nav.nav-sticky .navbar-brand img {
+    position: absolute;
+    max-height: 50px;
+    margin-top: -25px;
+    transition: all .5s;
+}
+
+#nav .nav-link,
+#nav .nav-link:focus,
+#nav .nav-link:hover,
+#nav .nav-link.active {
+    color: #ffffff;
+}
+
+#nav .nav-link:hover,
+#nav .nav-link.active {
+    color: #4F84C4;
+    background: #ffffff;
+    transition: none;
+}
+
+#nav .dropdown-menu {
+    margin-top: 0;
+    border: 0;
+    border-radius: 0;
+    background: #f8f9fa;
+}
+
+@media (min-width: 768px) {
+    #nav,
+    #nav .navbar {
+        background: rgba(0, 0, 0, 1) !important;
+    }
+    
+    #nav a.nav-link {
+        padding: 8px 15px;
+        font-size: 15px;
+        text-transform: uppercase;
+    }
+}
+
+@media (max-width: 768px) {   
+    #nav,
+    #nav .navbar {
+        background: rgba(0, 0, 0, 1) !important;
+    }
+    
+    #nav a.nav-link {
+        padding: 5px;
+    }
+    
+    #nav .dropdown-menu {
+        box-shadow: none;
+    }
+    
+    #nav .container-fluid {
+        padding: 0;
+    }
+}
+
+
+
+/**************************************/
+/************* Header CSS *************/
+/**************************************/
+.header {
+    position: relative;
+    width: 100%;
+    background: #ffffff;
+    margin-top: 100px;
+}
+
+.header .carousel-item {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.header .carousel-img {
+    text-align: center;
+}
+
+.header .carousel-img img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.header .carousel-content {
+    padding: 30px;
+    text-align: center;
+}
+
+.header .carousel-content h2 {
+    color: #4F84C4;
+    font-size: 45px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    text-transform: capitalize;
+}
+
+.header .carousel-content p {
+    color: #353535;
+    font-size: 22px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    margin-bottom: 25px;
+}
+
+.header .carousel-content .btn {
+    padding: 12px 30px;
+    color: #ffffff;
+    border-radius: 0;
+    background: #4F84C4;
+}
+
+.header .carousel-content .btn:hover {
+    background: #888888;
+}
+
+.carousel-control-next i,
+.carousel-control-prev i {
+    color: #888888;
+    font-size: 45px;
+}
+
+.carousel-indicators li {
+    width: 20px;
+    height: 0px;
+    background: #888888;
+}
+
+
+
+/**************************************/
+/******** Section Header CSS **********/
+/**************************************/
+.section-header {
+    position: relative;
+    max-width: 700px;
+    margin: 0 auto 60px auto;
+    padding-bottom: 25px;
+}
+
+.section-header h2 {
+    color: #666666;
+    font-size: 35px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 6px;
+    text-align: center;
+}
+
+.section-header::after {
+    content: '';
+    position: absolute;
+    display: inline-block;
+    width: 100px;
+    height: 5px;
+    background: #cccccc;
+    border-radius: 0 0 5px 5px;
+    bottom: 0;
+    left: calc(50% - 50px);
+}
+
+.section-header p {
+    font-size: 22px;
+    font-weight: 300;
+    text-align: center;
+    margin: 0;
+}
+
+
+
+/**************************************/
+/********* About + Single CSS *********/
+/**************************************/
+.about,
+.single {
+    position: relative;
+    padding: 90px 0 60px 0;
+    background: #f2f2f2;
+}
+
+.about .col-md-12,
+.about .col-md-6,
+.single .col-md-12,
+.single .col-md-6 {
+    margin-bottom: 30px;
+}
+
+.about .about-img,
+.single .single-img {
+    position: relative;
+    overflow: hidden;
+}
+
+.about .about-img img,
+.single .single-img img {
+    width: 100%;
+}
+
+.about .about-content,
+.single .single-content {
+    position: relative;
+    width: 80%;
+    margin: -100px auto 0 auto;
+    padding: 30px;
+    background: #ffffff;
+}
+
+.about .about-content h2,
+.single .single-content h2 {
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.about .about-content p,
+.single .single-content p {
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.about .btn,
+.single .btn {
+    font-size: 14px;
+    letter-spacing: 1px;
+    color: #ffffff;
+    background: #999999;
+    border-radius: 0;
+}
+
+.about .btn:hover,
+.single .btn:hover {
+    background: #4F84C4;
+}
+
+
+
+/**************************************/
+/************ Services CSS ************/
+/**************************************/
+.service {
+    background: #ffffff;
+    padding: 90px 0 60px 0;
+    text-align: center;
+}
+
+.service .service-item {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.service .service-icon {
+    position: relative;
+    width: 100%;
+    padding: 30px 15px;
+    background: #4F84C4;
+}
+
+.service .service-icon i {
+    font-size: 90px;
+    line-height: 0;
+    color: #ffffff;
+}
+
+.service .service-detail {
+    position: relative;
+    width: 100%;
+    padding: 30px 15px;
+    background: #f2f2f2;
+}
+
+.service .service-detail h4,
+.service .service-detail h4 a {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+}
+
+.service .service-detail p {
+    margin: 0;
+}
+
+
+
+/**************************************/
+/********* Call To Action CSS *********/
+/**************************************/
+.call-to-action {
+    position: relative;
+    padding: 90px 0;
+    background: #4F84C4;
+}
+
+.call-to-action .container {
+    max-width: 700px;
+}
+
+.call-to-action .section-header h2 {
+    color: #ffffff;
+}
+
+.call-to-action .section-header::before {
+    background: #ffffff;
+}
+
+.call-to-action .section-header p {
+    color: #ffffff;
+}
+
+.call-to-action .btn {
+    padding: 15px 30px;
+    color: #4F84C4;
+    font-weight: 700;
+    font-size: 18px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    background: #ffffff;
+    border-radius: 0;
+    transition: 0.3s;
+}
+
+.call-to-action .btn:hover {
+    color: #ffffff;
+    background: #353535;
+}
+
+
+
+/**************************************/
+/************* Pricing CSS ************/
+/**************************************/
+.pricing {
+    background: #f2f2f2;
+    padding: 90px 0 60px 0;
+}
+
+.pricing .price-content {
+    position: relative;
+    background: #ffffff;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.pricing .price-plan {
+    display: block;
+    background: #353535;
+    margin: 0 0 30px;
+    padding: 20px 0;
+}
+
+.pricing .price-plan i {
+    color: #ffffff;
+    font-size: 60px;
+    line-height: 80px;
+}
+
+.pricing .price-title {
+    display: block;
+    color: #ffffff;
+    font-size: 30px;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+.pricing .price-amount {
+    position: relative;
+    font-family: 'Arial, Helvetica', sans-serif;
+    color: #ffffff;
+    font-size: 60px;
+    font-weight: 900;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+.pricing .price-amount span {
+    color: #ffffff;
+    font-size: 22px;
+    font-weight: 400;
+    text-transform: lowercase;
+}
+
+.pricing .price-amount span:first-child {
+    position: relative;
+    top: -27px;
+    left: -5px;
+}
+
+.pricing .price-date {
+    color: #ffffff;
+    font-size: 12px;
+    margin-top: 5px;
+    text-transform: uppercase;
+    margin-bottom:0;
+}
+
+.pricing .price-details {
+    font-size: 16px;
+    list-style: none;
+    text-align: left;
+}
+
+.pricing .price-details li {
+    padding: 5px 0;
+}
+
+.pricing .price-details li i.ion-md-checkmark {
+    color: #4F84C4;
+    margin-right: 8px;
+}
+
+.pricing .price-details li i.ion-md-close {
+    color: #ea4335;
+    margin-right: 10px;
+}
+
+.pricing .btn {
+    color: #ffffff;
+    padding: 10px 30px;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 0;
+}
+
+.pricing .price-btn {
+    margin-top: 10px;
+    margin-bottom: 30px;
+    background: #353535;
+    color: #ffffff;
+}
+
+.pricing .price-btn:hover {
+    background: #4F84C4;
+}
+
+.pricing .features-price-btn {
+    background: #4F84C4;
+}
+
+.pricing .features-price-btn:hover {
+    background: #353535;
+}
+
+.pricing .features-price .price-plan {
+    background: #4F84C4;
+}
+
+.pricing .features-price .price-plan p{
+    color:#FFFFFF;
+}
+
+.pricing .features-price .price-plan .price-amount, 
+.pricing .features-price .price-plan .price-amount span {
+    color: #ffffff;
+}
+
+.pricing .features-price .price-plan .price-title {
+    color:#ffffff;
+}
+
+
+
+/**************************************/
+/*********** Our Skills CSS ***********/
+/**************************************/
+.skills {
+    position: relative;
+    padding: 90px 0 60px 0;
+}
+
+.skills .skill-item {
+    position: relative;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.skills .skill-item h3 {
+    font-size: 22px;
+    font-weight: 700;
+    color: #666666;
+    margin-bottom: 15px;
+}
+
+.skills .skill-name {
+    position: relative;
+    width: 100%;
+}
+
+.skills .skill-name p {
+    display: inline-block;
+    margin-bottom: 5px;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.skills .skill-name p:last-child {
+    float: right;
+}
+
+.skills .progress {
+    margin-bottom: 15px;
+    border-radius: 0;
+}
+
+.skills .progress .progress-bar {
+    background: #4F84C4;
+    border-radius: 0;
+}
+
+
+
+/**************************************/
+/************ Counters CSS ************/
+/**************************************/
+.counters {
+    position: relative;
+    width: 100%;
+    padding: 90px 0;
+    background: #4F84C4;
+}
+
+.counters i {
+    display: inline-block;
+    font-size: 90px;
+    line-height: 0;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+.counters h2 {
+    font-family: 'Arial, Helvetica', sans-serif;
+    font-size: 60px;
+    font-weight: 900;
+    letter-spacing: 5px;
+    color: #ffffff;
+}
+
+.counters p {
+    font-size: 22px;
+    color: #ffffff;
+}
+
+
+
+/**************************************/
+/************ Portfolio CSS ***********/
+/**************************************/
+.portfolio {
+    position: relative;
+    padding: 90px 0 60px 0;
+    background: #f2f2f2;
+}
+
+.portfolio .portfolio-item {
+    margin-bottom: 30px;
+    overflow: hidden;
+}
+
+.portfolio .portfolio-item .portfolio-img {
+    position: relative;
+    background: #000000;
+    overflow: hidden;
+    
+}
+
+.portfolio .portfolio-item .link-preview,
+.portfolio .portfolio-item .link-details {
+    position: absolute;
+    display: inline-block;
+    padding: 5px 0;
+    line-height: 1;
+    text-align: center;
+    width: 45px;
+    height: 35px;
+    background: #4F84C4;
+    border: 1px solid #ffffff;
+    transition: 0.3s;
+    opacity: 0;
+}
+
+.portfolio .portfolio-item .link-preview i,
+.portfolio .portfolio-item .link-details i {
+    font-size: 22px;
+    color: #ffffff;
+}
+
+.portfolio .portfolio-item .link-preview:hover,
+.portfolio .portfolio-item .link-details:hover {
+    background: #ffffff;
+    border: 1px solid #4F84C4;
+}
+
+.portfolio .portfolio-item .link-preview:hover i,
+.portfolio .portfolio-item .link-details:hover i {
+    color: #353535;
+}
+
+.portfolio .portfolio-item .link-preview {
+    left: 0;
+    top: calc(50% - 18px);
+}
+
+.portfolio .portfolio-item .link-details {
+    right: 0;
+    top: calc(50% - 18px);
+}
+
+.portfolio .portfolio-item:hover .link-preview {
+    opacity: 1;
+    left: calc(50% - 50px);
+}
+
+.portfolio .portfolio-item:hover .link-details {
+    opacity: 1;
+    right: calc(50% - 50px);
+}
+
+.portfolio .portfolio-item .portfolio-info {
+    position: relative;
+    width: 100%;
+    padding: 30px 15px;
+    text-align: center;
+    background: #ffffff;
+}
+
+.portfolio .portfolio-item .portfolio-info h3 {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.portfolio .portfolio-item .portfolio-info p {
+    margin: 0;
+    font-size: 14px;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+
+
+/**************************************/
+/************** Team CSS **************/
+/**************************************/
+.team {
+    position: relative;
+    padding: 90px 0;
+    background: #ffffff;
+}
+
+.team .team-item {
+    margin-bottom: 30px;
+    overflow: hidden;
+}
+
+.team .team-item .team-img {
+    position: relative;
+    background: #000000;
+    overflow: hidden;
+    
+}
+
+.team .team-item .team-social {
+    position: absolute;
+    display: block;
+    text-align: center;
+    width: 100%;
+    height: 35px;
+    top: 0;
+    left: 0;
+    transition: 0.3s;
+    opacity: 0;
+}
+
+.team .team-item .team-social a {
+    display: inline-block;
+    padding: 5px 0;
+    line-height: 1;
+    text-align: center;
+    width: 35px;
+    height: 35px;
+    background: #4F84C4;
+    border: 1px solid #ffffff;
+}
+
+.team .team-item .team-social a i {
+    font-size: 22px;
+    color: #ffffff;
+}
+
+.team .team-item .team-social a:hover {
+    background: #ffffff;
+    border: 1px solid #4F84C4;
+}
+
+.team .team-item .team-social a:hover i {
+    color: #353535;
+}
+
+.team .team-item:hover .team-social {
+    opacity: 1;
+    top: calc(50% - 18px);
+}
+
+.team .team-item .team-info {
+    position: relative;
+    width: 100%;
+    padding: 30px 15px;
+    text-align: center;
+    background: #f2f2f2;
+}
+
+.team .team-item .team-info h3 {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.team .team-item .team-info p {
+    margin: 0;
+    font-size: 14px;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+
+
+/**************************************/
+/*********** Testimonials CSS *********/
+/**************************************/
+.testimonials {
+    position: relative;
+    padding: 90px 0 60px 0;
+    background: #f2f2f2;
+}
+
+.testimonials .testimonial-item {
+    position: relative;
+    margin: 0 15px 30px 15px;
+    background: #ffffff;
+}
+
+.testimonials .testimonial-img {
+    position: relative;
+    background: #000000;
+    overflow: hidden;
+}
+
+.testimonials .testimonial-text {
+    position: relative;
+    width: 100%;
+    padding: 30px 15px;
+    text-align: center;
+    background: #ffffff;
+}
+
+.testimonials .testimonial-text h3 {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.testimonials .testimonial-text h4 {
+    font-size: 12px;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+.testimonials .testimonial-text p {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.testimonials .owl-nav,
+.testimonials .owl-dots {
+    margin-top: 5px;
+    text-align: center;
+}
+
+.testimonials .owl-dot {
+    display: inline-block;
+    margin: 0 5px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #dddddd;
+}
+
+.testimonials .owl-dot.active {
+    background-color: #4F84C4;
+}
+
+@media (max-width: 575px) {
+    .testimonials .testimonial-text {
+        padding: 25px;
+    }
+}
+
+
+
+/**************************************/
+/************* Clients CSS ************/
+/**************************************/
+.clients {
+    position: relative;
+    padding: 90px 0;
+}
+
+.clients .section-header p {
+    padding-bottom: 10px;
+}
+
+.clients img {
+    max-width: 100%;
+    opacity: 1;
+    transition: 0.3s;
+    padding: 15px 0;
+}
+
+.clients img:hover {
+    opacity: .5;
+}
+
+.clients .owl-nav,
+.clients .owl-dots {
+    margin-top: 5px;
+    text-align: center;
+}
+
+.clients .owl-dot {
+    display: inline-block;
+    margin: 0 5px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #ddd;
+}
+
+.clients .owl-dot.active {
+    background-color: #4F84C4;
+}
+
+
+
+/**************************************/
+/************* Contact CSS ************/
+/**************************************/
+.contact {
+    position: relative;
+    padding: 90px 0;
+    background: #f2f2f2;
+}
+
+.contact .container {
+    max-width: 900px;
+}
+
+.contact .container .col-md-6 {
+    padding: 0;
+    background: #ffffff;
+}
+
+.contact .form {
+    background: #ffffff;
+    padding: 30px;
+    color: #353535;
+}
+
+.contact .form input,
+.contact .form textarea {
+    padding: 10px 0;
+    border-color: #dddddd transparent #dddddd transparent;
+    border-radius: 0;
+    box-shadow: none;
+    font-size: 15px;
+}
+
+.contact .form input:focus,
+.contact .form textarea:focus {
+    border-color: #4F84C4 transparent #4F84C4 transparent;
+}
+
+.contact .form button[type="submit"] {
+    color: #ffffff;
+    background: #888888;
+    border-radius: 0;
+}
+
+.contact .form button[type="submit"]:hover {
+    background: #4F84C4;
+}
+
+.contact .map {
+    position: relative;
+    background: #ffffff;
+}
+
+.contact .map iframe {
+    width: 100%;
+    height: 375px;
+    margin-bottom: -7px;
+}
+
+
+
+/**************************************/
+/************* Footer CSS *************/
+/**************************************/
+.footer {
+    position: relative;
+    padding: 0 0 30px 0;
+    background: #000000;
+}
+
+.footer .footer-top {
+    background: #222222;
+    padding: 60px 0 30px 0;
+}
+
+.footer .footer-top .footer-info,
+.footer .footer-top .footer-links,
+.footer .footer-top .footer-contact,
+.footer .footer-top .footer-newsletter {
+    margin-bottom: 30px;
+}
+
+.footer .footer-top .social-links a {
+    font-size: 18px;
+    display: inline-block;
+    background: #ffffff;
+    color: #4F84C4;
+    line-height: 1;
+    padding: 9px 0;
+    margin-right: 4px;
+    text-align: center;
+    width: 36px;
+    height: 36px;
+    transition: 0.3s;
+}
+
+.footer .footer-top .social-links a:hover {
+    background: #4F84C4;
+    color: #ffffff;
+}
+
+.footer .footer-top h4 {
+    font-size: 16px;
+    font-weight: 700;
+    color: #ffffff;
+    text-transform: uppercase;
+    position: relative;
+    padding-bottom: 12px;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+
+.footer .footer-top h4::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 0;
+    width: 50px;
+    border-bottom: 2px solid #ffffff;
+}
+
+.footer .footer-top .footer-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer .footer-top .footer-links ul i {
+    padding-right: 8px;
+    color: #ffffff;
+    font-size: 16px;
+}
+
+.footer .footer-top .footer-links ul li {
+    border-bottom: 1px solid #ffffff;
+    padding: 7px 0;
+}
+
+.footer .footer-top .footer-links ul li:first-child {
+    padding-top: 0;
+}
+
+.footer .footer-top .footer-links ul a {
+    font-size: 14px;
+    color: #ffffff;
+}
+
+.footer .footer-top .footer-links ul a:hover {
+    color: #4F84C4;
+}
+
+.footer .footer-top .footer-contact p {
+    color: #ffffff;
+    line-height: 26px;
+}
+
+.footer .footer-top .footer-newsletter input[type="email"] {
+    padding: 6px 8px;
+    width: 60%;
+    border: 1px solid #ffffff;
+    background: transparent;
+    color: #ffffff;
+}
+
+.footer .footer-top .footer-newsletter input[type="submit"] {
+    border: 0;
+    width: 40%;
+    padding: 6px 0;
+    text-align: center;
+    color: #4F84C4;
+    border: 1px solid #ffffff;
+    background: #ffffff;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.footer .footer-top .footer-newsletter input[type="submit"]:hover {
+    color: #ffffff;
+    background: #4F84C4;
+    border: 1px solid #4F84C4;
+}
+
+.footer .footer-top .footer-newsletter p {
+    color: #ffffff;
+    font-size: 14px;
+}
+
+.footer .credit,
+.footer .copyright {
+    text-align: center;
+    padding-top: 30px;
+}
+
+@media (min-width: 768px) {
+    .footer .credit {
+        text-align: right;
+    }
+    
+    .footer .copyright {
+        text-align: left;
+    }
+}
